@@ -1,0 +1,270 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "chitarrista due punto zero",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayNoteIntent",
+                    "slots": [
+                        {
+                            "name": "note",
+                            "type": "NOTE"
+                        },
+                        {
+                            "name": "pitch",
+                            "type": "PITCH"
+                        }
+                    ],
+                    "samples": [
+                        "suona la nota di {note} {pitch}",
+                        "vorrei accordare il {note} {pitch}",
+                        "{note} {pitch}",
+                        "suonami la nota {note} {pitch}",
+                        "fammi sentire la nota {note} {pitch} ",
+                        "riproduci la nota {note} {pitch} ",
+                        "suona la nota {note} {pitch}",
+                        "suonami un {note} {pitch}",
+                        "fammi sentire un {note} {pitch}",
+                        "riproduci un {note} {pitch} ",
+                        "suona un {note} {pitch}"
+                    ]
+                },
+                {
+                    "name": "PlayChordIntent",
+                    "slots": [
+                        {
+                            "name": "note",
+                            "type": "NOTE"
+                        },
+                        {
+                            "name": "chordtype",
+                            "type": "CHORDTYPE"
+                        }
+                    ],
+                    "samples": [
+                        "fammi sentire l'accordo {note} {chordtype}",
+                        "suonami l'accordo {note} {chordtype}",
+                        "riproduci l'accordo {note} {chordtype}",
+                        "suona l'accordo {note} {chordtype}",
+                        "suonami l'accordo di {note} {chordtype}",
+                        "suonami un accordo di {note} {chordtype}",
+                        "fammi sentire l' accordo di {note} {chordtype}",
+                        "fammi sentire un accordo di {note} {chordtype}",
+                        "riproduci l'accordo di {note} {chordtype}",
+                        "riproduci un accordo di {note} {chordtype}",
+                        "suona l'accordo di {note} {chordtype}",
+                        "suona un accordo di {note} {chordtype}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AskGuitarTuningIntent",
+                    "slots": [],
+                    "samples": [
+                        "accordiamoci",
+                        "aiutami con l'accordatura",
+                        "aiutami con l'accordatura della chitarra",
+                        "aiutami ad accordare la chitarra",
+                        "aiutami ad accordare la mia chitarra",
+                        "la mia chitarra è scordata",
+                        "accordami la chitarra",
+                        "voglio accordare la chitarra",
+                        "accordiamo la chitarra",
+                        "vorrei accordare la chitarra"
+                    ]
+                },
+                {
+                    "name": "AskPlayChordIntent",
+                    "slots": [],
+                    "samples": [
+                        "accordi chitarra",
+                        "accordi della chitarra",
+                        "voglio sentire gli accordi della chitarra",
+                        "riproducimi degli accordi",
+                        "riproduci degli accordi",
+                        "suonami degli accordi",
+                        "vorrei mi riproducessi un accordo",
+                        "vorrei ascoltare un accordo",
+                        "voglio ascoltare un accordo",
+                        "voglio sentire un accordo"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "NOTE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "si bemolle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "la diesis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "la bemolle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sol diesis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sol bemolle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fa diesis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mi bemolle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "re diesis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "re bemolle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "do diesis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "si"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "la"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "re"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "do"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PITCH",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "cantino"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alto"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basso"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CHORDTYPE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "minore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maggiore"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TUNING",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "mi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "re"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "do"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sol"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
